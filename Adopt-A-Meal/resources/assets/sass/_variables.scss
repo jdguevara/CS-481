@@ -1,0 +1,93 @@
+//Interfaith Typography
+@import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre:300|Open+Sans:300,400,700,800|Amatic+SC:400,800|Open+Sans:300,400,700,800');
+
+$interfaith-open-sans :'Open Sans', sans-serif;
+$interfaith-jumbotron-font:'Averia Serif Libre', cursive;
+$interfaith-decorative: 'Amatic SC', cursive;
+
+
+// Body
+$body-bg: white;
+
+// Panels
+
+//Interfaith Brand Colors
+$interfaith-red: #ef3c5a;
+$interfaith-blue: #36b0bF;
+$interfaith-green: #e8f3df;
+$interfaith-yellow: #f4a71d;
+$interfaith-turquoise:#63c8cd;
+
+// Brands
+$brand-primary:         black !default;
+$brand-success:         $interfaith-blue !default;
+$brand-info:            $interfaith-red !default;
+$brand-warning:         $interfaith-yellow !default;
+$brand-danger:          $interfaith-red !default;
+
+
+// Borders
+$laravel-border-color: darken($body-bg, 10%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: #fff;
+$navbar-default-brand-color:$brand-info;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+
+$panel-default-heading-bg:white;
+//Jumbotron
+$jumbotron-bg:black;
+$jumbotron-color:white;
+$jumbotron-heading-color:$brand-warning;
+// Typography
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+$font-size-base: 14px;
+$line-height-base: 1.6;
+$text-color: #636b6f;
+$close-font-weight:300;
+$headings-font-weight:300;
+$btn-font-weight:300;
+$font-family-base:$interfaith-open-sans;
+$badge-font-weight:300;
+$font-family-sans-serif:$interfaith-open-sans;
+
+// Navbar
+$navbar-default-bg: #fff;
+$navbar-height:79px;
+$navbar-inverse-link-color: $brand-info;
+$navbar-default-link-hover-color:$brand-info;
+
+//links
+
+
+// Buttons
+$btn-default-color: $text-color;
+
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+$btn-font-weight:                normal !default;
+$btn-default-color:              #333 !default;
+$btn-default-bg:                 #fff !default;
+$btn-default-border:             #ccc !default;
+$btn-primary-color:              #fff !default;
+$btn-primary-bg:                 $brand-info !default;
+$btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+$btn-success-color:              #fff;
+$btn-success-bg:                 $brand-success !default;
+$btn-success-border:             darken($btn-success-bg, 5%) !default;
+$btn-info-color:                 #fff !default;
+$btn-info-bg:                    $brand-info !default;
+$btn-info-border:                darken($btn-info-bg, 5%) !default;
+$btn-warning-color:              #fff !default;
+$btn-warning-bg:                 $brand-warning !default;
+$btn-warning-border:             darken($btn-warning-bg, 5%) !default;
+$btn-danger-color:               #fff !default;
+$btn-danger-bg:                  $brand-danger !default;
+$btn-danger-border:              darken($btn-danger-bg, 5%) !default;
+

@@ -1,0 +1,128 @@
+// Import variables before bootstrap to apply them
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Variables
+@import "checkbox";
+@import "form";
+@import "loading-spinner";
+@import "quill";
+
+//
+@import "~fullcalendar/dist/fullcalendar.min.css";
+
+@media screen and (max-width: 600px) {
+    .desktop {
+        display: none !important;
+    }
+}
+@media screen and (min-width: 600px) {
+    .mobile {
+      display: none !important;
+    }
+}
+
+.navbar-brand > .brand {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.text-yellow {
+    color: $interfaith-yellow;
+}
+
+.text-light {
+    color: $text-muted;
+}
+
+.row-padding {
+    margin: 0;
+}
+
+.messages-list {
+    height: 65vh;
+    overflow-y: scroll;
+}
+
+.messages-search-bar {
+    width: 50%;
+    margin: 15px auto;
+}
+
+@media screen and (max-width: 991px) {
+    .messages-search-bar {
+        width: 100%;
+        margin: 15px 0;
+    }
+}
+
+.month-title {
+    font-weight: 700;
+    text-align: center;
+    margin: 0px auto;
+}
+
+#app{
+  padding-top:82px;
+}
+
+#nav-shadow{
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+#navbar-brand-font{
+  font-weight:700;
+  font-family:$interfaith-decorative;
+  font-size: 20px;
+}
+#navbar-brand-padding{
+  padding:5px;
+}
+#navbar-brand-size{
+  max-height:100px;
+  max-width:100px;
+}
+#jumbotron-subheader{
+  font-size:80px;
+  font-weight: 700;
+  color:white;
+}
+#jumbotron-header > * {
+  padding-top:30px;
+  font-size:110px;
+  font-family: $interfaith-jumbotron-font;
+}
+#jumbotron-header {
+  padding-top:30px;
+  font-size:110px;
+  font-family: $interfaith-jumbotron-font;
+}
+#jumbotron-footer-header > * {
+  font-family:$interfaith-decorative;
+  font-weight:700;
+}
+.jumbotron-footer {
+  margin-top:200px;
+  margin-bottom:0px;
+}
+.thank-you-list-item{
+  font-family:$interfaith-decorative;
+  background-color: black;
+  border-width: 0px;
+  color:$interfaith-yellow;
+}
+
+
+.list-group-container > button {
+    position: absolute;
+    top: 32px;
+    right: 0;
+    margin-right: 15px;
+
+}
+
+.fc-day-grid-event {
+    padding-top: 8px;
+    padding-bottom: 8px
+}
