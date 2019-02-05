@@ -1,2 +1,6 @@
 ## Directories to ignore
 archive/
+
+## Files to ignore
+.DS_Store
+
