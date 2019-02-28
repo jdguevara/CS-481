@@ -1,0 +1,33 @@
+CREATE DATABASE adoptameal;
+USE adoptameal;
+
+CREATE TABLE admin (
+  admin_id INT NOT NULL AUTO_INCREMENT,
+  admin_email VARCHAR(255) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  PRIMARY KEY (admin_id)
+);
+
+CREATE TABLE volunteer (
+  id int NOT NULL AUTO_INCREMENT,
+  org_name VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  phone VARCHAR(15) NOT NULL,
+  meal_idea TEXT NOT NULL
+  form_status SMALLINT,
+  event_date_time DATETIME NOT NULL,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE meal_idea (
+  id int NOT NULL AUTO_INCREMENT,
+  idea_title VARCHAR(255) NOT NULL,
+  description TEXT NOT NULL,
+  ingredients_json LONGTEXT NOT NULL,
+  link VARCHAR(255),
+  name VARCHAR(255),
+  email VARCHAR(255),
+  idea_status SMALLINT,
+  PRIMARY KEY (id)
+);
+
