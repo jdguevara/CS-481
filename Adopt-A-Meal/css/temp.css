@@ -1,0 +1,669 @@
+.navbar-brand > .brand {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #636b6f;
+    background-color: white;
+    position: relative;
+}
+
+.interfaith-row-padding {
+    margin: 0;
+}
+
+.messages-list {
+    height: 65vh;
+    overflow-y: scroll;
+}
+
+.messages-search-bar {
+    width: 50%;
+    margin: 15px auto;
+}
+
+@media screen and (max-width: 991px) {
+    .messages-search-bar {
+        width: 100%;
+        margin: 15px 0;
+    }
+}
+
+.month-title {
+    font-weight: 700;
+    text-align: center;
+    margin: 0px auto;
+}
+
+#app{
+    padding-top:82px;
+}
+
+#nav-shadow{
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+#navbar-brand-font {
+    font-weight: 700;
+    font-family: "Amatic SC", cursive;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.navbar-default .navbar-brand {
+    color: #ef3c5a;
+}
+.navbar-brand {
+    float: left;
+    padding: 28.5px 15px;
+    font-size: 18px;
+    line-height: 22px;
+    height: 79px;
+}
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+#navigation{
+    margin-top: 15px;
+}
+#navbar-brand-padding{
+    padding:5px;
+}
+#navbar-brand-size{
+    max-height:100px;
+    max-width:100px;
+}
+.navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+    top: 0;
+    border-width: 0 0 1px;
+    /* position: fixed; */
+    right: 0;
+    left: 0;
+}
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+    position: fixed;
+    right: 0;
+    left: 0;
+}
+.navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+}
+.navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+}
+.navbar-collapse {
+    width: auto;
+    border-top: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.navbar-collapse:before, .navbar-collapse:after {
+    content: " ";
+    display: table;
+}
+.navbar-collapse:after {
+    clear: both;
+}
+
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #777;
+}
+.navbar-nav > li > a {
+    padding-top: 28.5px;
+    padding-bottom: 28.5px;
+    line-height: 22px;
+}
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+.pull-right {
+    float: right !important;
+}
+.navbar-nav {
+    float: left;
+    margin: 0;
+}
+.nav-bar {
+    position: relative;
+    min-height: 79px;
+    border: 1px solid transparent;
+    overflow: visible;
+}
+.nav {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.navbar-nav > li {
+    float: left;
+}
+.nav > li {
+    position: relative;
+    display: block;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.header{
+    position: relative;
+    width: 100%;
+    float: left;
+    text-align: center;
+    background-color:rgb(221, 221, 221);
+    color: #ef3c5a;
+}
+
+h1#home-header{
+    padding:0;
+    margin:0;
+}
+
+.header > h1{
+    font-family: "Averia Serif Libre", cursive;
+    color: #ef3c5a;
+    font-size: 4em;
+}
+/* .jumbotron{
+    min-width:768px;
+    background-color:black;
+    margin-bottom:30px;
+    box-sizing: border-box;
+}
+#jumbotron-subheader{
+    font-size:80px;
+    font-weight: 700;
+    color:white;
+}
+#jumbotron-header > * {
+    font-size:110px;
+}
+#jumbotron-header {
+    font-size:110px;
+    font-family: "Averia Serif Libre", cursive
+}
+/*  */
+h1#meal-header, p#meal-header{
+    color:#ef3c5a;
+}
+
+
+
+#jumbotron-footer-header > * {
+    font-weight:700;
+}
+.jumbotron-footer {
+    background-color:black;
+    /* margin-top:25px; */
+    /* margin-bottom:50px; */
+}
+.jumbotron-footer:before, .jumbotron-footer:after {
+    content: " ";
+    display: table;
+}
+.jumbotron-footer:after {
+    clear: both;
+}
+.thank-you-list-item{
+    background-color: black;
+    border-width: 0px;
+}
+/* .calendar{
+  float:left;
+  /* width: 100%;
+  margin-left:25%; */
+/* display: block !important;
+height: auto !important;
+padding-bottom: 0;
+overflow: visible !important;
+} */
+
+.list-group-container > button {
+    position: absolute;
+    top: 32px;
+    right: 0;
+    margin-right: 15px;
+
+}
+
+.fc-day-grid-event {
+    padding-top: 8px;
+    padding-bottom: 8px
+}
+
+#footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer:before, .footer:after {
+    content: " ";
+    display: table;
+}
+.footer:after {
+    clear: both;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #444444;
+    text-shadow: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+    color: #777777;
+}
+
+#footer #first{
+    border-left: none;
+}
+
+#footer li {
+    display: inline;
+    padding: 0 10px;
+    border-left: solid 1px #DDD;
+}
+
+h1{
+    color:black;
+}
+
+/*
+Admin Login CSS
+*/
+form#login {
+    margin-left:25%;
+    margin-top: 10%;
+    text-align: center;
+    background-color: rgb(221, 221, 221);
+    width:50%;
+    border-radius: 25px;
+    border: 1px solid rgb(0, 0, 0);
+}
+form > h2{
+    font-family: 'Poppins', sans-serif;
+    color:#ef3c5a;
+}
+b{
+    color:white;
+}
+#login {
+    border:solid;
+    background-color: white;
+}
+#ip2 {
+    border-radius: 25px;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 20px;
+    width: 50%;
+    height: 15px;
+}
+
+#bottom_login{
+    margin-top:50px;
+    background-color: rgb(221, 221, 221);
+}
+
+input[type=text], input[type=password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/*Accept Reject buttons*/
+form#idea {
+    text-align: center;
+    border-radius: 25px;
+    display: inline;
+}
+/*
+Share Button CSS
+*/
+.btn-primary {
+    color: #fff;
+    background-color: #ef3c5a;
+    border-color: #ed2446;
+    border-radius: 12px;
+}
+
+/*Add Admin Button*/
+.addAdmin{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+/* text-area */
+textarea{
+    width: 100%;
+}
+
+/*
+Login Buttons CSS
+*/
+button {
+    border-radius: 12px;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+}
+
+#createAccount {
+    position: relative;
+    float: right;
+    right: 30px;
+    width: 50%;
+    bottom: 50px;
+    color: #f4a71d;
+}
+
+#secondaryLink {
+    display: inline-block
+}
+
+#secondaryLink:hover {
+    color: #e90510;
+    text-decoration: underline;
+}
+
+/* Link used to open the contact form */
+.forgot-password-link {
+    position: relative;
+    float: left;
+    background-color: black;
+    color: #f4a71d;
+    border: none;
+    cursor: pointer;
+    bottom: 50px;
+    width: 50%;
+    border-radius: 12px;
+    height: 45px;
+}
+
+.forgot-password-link:hover {
+    color: #e90510;
+    text-decoration: underline;
+}
+
+/* The popup form (for forgotten password) - hidden by default */
+.form-popup {
+    display: none;
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    /*! left: 180px; */
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    position: relative;
+    left: 160px;
+    max-width: 400px;
+    padding: 10px;
+    background-color: black;
+    border-color: #f4a71d;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+.top-footer{
+    position: relative;
+    width: 100%;
+    float: left;
+    text-align: center;
+    background-color:rgb(221, 221, 221);
+    color: #ef3c5a;
+    padding-bottom: 2%;
+}
+
+.top-footer > h1{
+    color: #ef3c5a;
+    font-family: "Averia Serif Libre", cursive;
+}
+/* 
+#login-footer {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.footer:before, .footer:after {
+    content: " ";
+    display: table;
+}
+.footer:after {
+    clear: both;
+}
+
+#login-footer a {
+    text-decoration: none;
+    color: #444444;
+    text-shadow: none;
+}
+
+#login-footer a:hover {
+    text-decoration: underline;
+    color: #777777;
+}
+
+#login-footer #first{
+    border-left: none;
+}
+
+#login-footer li {
+    display: inline;
+    padding: 0 10px;
+    border-left: solid 1px #DDD;
+} */
+
+/*Error messages*/
+.message{
+    color: black;
+    background-color:#D8000C;
+    width:25%;
+    margin:auto;
+    margin-top:25px;
+    font-size:1.5em;
+    vertical-align:middle;
+    text-align:center;
+    border-radius: 25px;
+    z-index: 10000;
+}
+
+/*Success messages*/
+.messageSuccess{
+    color: black;
+    background-color: #4CAF50;
+    width:25%;
+    margin:auto;
+    margin-top:25px;
+    font-size:1.5em;
+    vertical-align:middle;
+    text-align:center;
+    border-radius: 25px;
+    position: absolute;
+    left:37.5%;
+    top:20%;
+    z-index: 10000000;
+}
+
+.modalContainer {
+    display: none;
+    position: absolute;
+    left:37.5%;
+    top:25%;
+    width: 100%;
+    z-index: 10000;
+}
+
+.modalContainer#volunteerModal {
+    display: none;
+    position: fixed;
+    left:37.5%;
+    top:25%;
+    width: 100%;
+    margin-bottom:30%;
+    z-index: 100000000000;
+}
+/* Add styles to the form container */
+.formModal {
+    border-radius: 25px;
+    position: absolute;
+    /* left:37.5%; */
+    top:25%;
+    max-width: 400px;
+    padding: 10px;
+    margin:auto;
+    background-color: rgb(221, 221, 221);
+    color:#ef3c5a;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+    z-index: 10000;
+}
+
+.formModal#volMod{
+    bottom:15%;
+    border-radius: 25px;
+    position: fixed;
+    left: 33%;
+    max-width: 400px;
+    padding: 10px;
+    margin:auto;
+    background-color: rgb(221, 221, 221);
+    color:#ef3c5a;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+    z-index: 10000;
+}
+
+.modalContainer#volMod {
+    display: none;
+    position: fixed;
+    bottom: 25%;
+    width: 100%;
+    margin-bottom:30%;
+    z-index: 10000;
+}
+/* Add styles to the form container */
+.formModal {
+}
+
+.formModal#addAdmin{
+    min-width:400px;
+    width: 25%;
+}
+
+form > h1{
+    color:#ef3c5a;
+}
+
+/* Full-width input fields */
+.modalContainer input[type=text], .modalContainer input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.modalContainer input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.formModal .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    /* width: 100%; */
+    /* margin-bottom:10px; */
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.formModal .cancel {
+    background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.formModal .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+/*Form text area size*/
+/* textarea{
+    height:5%;
+} */

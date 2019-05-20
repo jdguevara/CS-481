@@ -1,33 +1,66 @@
+DAO will link to desired database. If you want to change the database that the
+project is connected to, go to Dao.php and change:
+private $host: desiredHost (ex:localhost or qs4006.pair.com)
+private $db = databasename (ex: adoptameal or tfdesign_adoptamealdev)
+private $user = userName for DB; (ex:root or tfdesign_218)
+private $pass = password for DB;
+
+
+Example Script for AdoptaMeal database (subject to change):
+
 CREATE DATABASE adoptameal;
 USE adoptameal;
 
-CREATE TABLE admin (
-  admin_id INT NOT NULL AUTO_INCREMENT,
-  admin_email VARCHAR(255) NOT NULL,
-  password VARCHAR(255) NOT NULL,
-  PRIMARY KEY (admin_id)
+CREATE TABLE IF NOT EXISTS users(
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL UNIQUE,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    super_user BOOLEAN NOT NULL,
+    PRIMARY KEY (id)
+);
+ 
+CREATE TABLE IF NOT EXISTS meal_ideas(
+    id INT NOT NULL AUTO_INCREMENT,
+    title VARCHAR(255) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    ingredients VARCHAR(255) NOT NULL,
+    instructions VARCHAR(2048) NOT NULL,
+    external_link VARCHAR(255),
+    name VARCHAR(255),
+    email VARCHAR(255),
+    meal_idea_status INT,
+    PRIMARY KEY (id)
+);
+ 
+CREATE TABLE IF NOT EXISTS volunteer_forms(
+    id INT NOT NULL AUTO_INCREMENT,
+    organization_name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    phone VARCHAR(255) NOT NULL,
+    meal_description VARCHAR(2048) NOT NULL,
+    notes VARCHAR(2048) NOT NULL,
+    paper_goods BOOLEAN NOT NULL,
+    form_status INT,
+    event_date_time DATETIME,
+    PRIMARY KEY (id)
 );
 
-CREATE TABLE volunteer (
-  id int NOT NULL AUTO_INCREMENT,
-  org_name VARCHAR(255) NOT NULL,
-  email VARCHAR(255) NOT NULL,
-  phone VARCHAR(15) NOT NULL,
-  meal_idea TEXT NOT NULL
-  form_status SMALLINT,
-  event_date_time DATETIME NOT NULL,
-  PRIMARY KEY (id)
+CREATE TABLE IF NOT EXISTS volunteer_dates(
+    id INT NOT NULL AUTO_INCREMENT,
+    date DATE NOT NULL,
+    PRIMARY KEY (id)
 );
 
-CREATE TABLE meal_idea (
-  id int NOT NULL AUTO_INCREMENT,
-  idea_title VARCHAR(255) NOT NULL,
-  description TEXT NOT NULL,
-  ingredients_json LONGTEXT NOT NULL,
-  link VARCHAR(255),
-  name VARCHAR(255),
-  email VARCHAR(255),
-  idea_status SMALLINT,
-  PRIMARY KEY (id)
-);
 
+//this will create a super-admin to get you started with login name admin and password admin as well as some sample data
+
+insert into users(name, email, password, super_user) value('admin', 'admin@admin.com', 'dd94709528bb1c83d08f3088d4043f4742891f4f', 1);
+insert into meal_ideas(title, description, ingredients, instructions, meal_idea_status) values('hamburgers', 'tasty burgs', 'buns, patties', 'cook patties, put together', 0);
+insert into meal_ideas(title, description, ingredients, instructions, meal_idea_status) values('hotdogs', 'delicious dogs', 'buns, weiners', 'grill dogs, throw in bun', 0);
+insert into meal_ideas(title, description, ingredients, instructions, meal_idea_status) values('salad', 'healthy salad', 'lettuce, veggies', 'chop veggies, toss together', 0);
+insert into meal_ideas(title, description, ingredients, instructions, meal_idea_status) values('fried chicken', 'colonels finest', 'chicken, batter, spices', 'batter chicken, fry', 1);
+insert into volunteer_forms(organization_name, email, phone, meal_description, notes, paper_goods, form_status, event_date_time) values('Freds Co', 'fred@gmail.com', '208-111-1111', 'Hamburgers', 'Grilling up them burgs', 1, 0, '2019-4-1' );
+insert into volunteer_forms(organization_name, email, phone, meal_description, notes, paper_goods, form_status, event_date_time) values('Bobs Co', 'bob@gmail.com', '208-222-2222', 'Hotdogs', 'Grilling up them dogs', 1, 0, '2019-4-2');
+insert into volunteer_forms(organization_name, email, phone, meal_description, notes, paper_goods, form_status, event_date_time) values('Teds Co', 'ted@gmail.com', '208-333-3333', 'Salad', 'Choppin up that salad', 0, 0, '2019-4-3');
+insert into volunteer_forms(organization_name, email, phone, meal_description, notes, paper_goods, form_status, event_date_time) values('Steves Co', 'steve@gmail.com', '208-444-4444', 'Fried chicken', 'Fried chicken fest 2019', 1, 0, '2019-4-4');
